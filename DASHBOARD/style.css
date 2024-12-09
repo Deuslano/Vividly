@@ -1,0 +1,313 @@
+body {
+    margin: 0px;
+}
+
+/* Menu lateral */
+
+.menu-lateral {
+    width: 60px;
+    height: 90%;
+    background-color: #0A6DC9;
+    padding: 35px 0 35px 1%;
+    box-shadow: 3px 0 0 #063970;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    margin: 1px;
+    line-height: 0.5;
+}
+
+nav.menu-lateral.expandir {
+    width: 200px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.txt-link {
+    margin-left: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li.itens-menu:hover {
+    transition: background-color 0.2s;
+}
+
+ul li.ativo {
+    background-color: #0056b3;
+}
+
+ul li.itens-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+ul li.itens-menu:hover {
+    background: #063970;
+}
+
+#avatarImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: -1px;
+}
+
+#avatarName {
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    display: none;
+}
+
+.menu-lateral.expandido #avatarName {
+    display: inline;
+}
+
+
+
+/* Página ---- */
+
+.content-topo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-image: url(../Imagens/DASHBOARD/vetor-topo-sejabemvindo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    min-height: 300px;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 120px;
+    gap: 40px;
+}
+
+.text-container {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10%;
+    color: #fff;
+    padding-top: 60px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.text-container h3 {
+    font-size: 45px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.text-container h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.img-container img {
+    width: 335px;
+    z-index: 1000;
+    margin-left: -5%;
+    padding-top: 32px;
+}
+
+.container {
+    margin-left: 135px;
+    padding-left: 3%;
+}
+
+.container-recomandation {
+    margin-top: 5%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2%;
+}
+
+.title {
+    font-size: 28pt;
+    color: #0A6DC9;
+    text-transform: uppercase;
+}
+
+.link-card {
+    text-decoration: none;
+    width: 20%;
+}
+.card{
+    border: 3px solid black;
+}
+
+
+.card {
+    border-radius: 10px;
+    border: 2px solid #0A6DC9;
+    width: 100%;
+    height: 150px;
+    background-color: #0A6DC9;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18pt;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px
+
+}
+
+.card:hover {
+    background-color: #9cc4e9;
+    color: #063970;
+    cursor: pointer;
+    transition: 0,5s ease;
+    transform: scale(1.2)
+}
+
+.card:active {
+    background-color: aliceblue;
+}
+
+.inria-sans-regular {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-annotation {
+    margin-top: 5%;
+}
+
+#btnAddAnotacao{
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+    background: #0A6DC9;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+#btnAddAnotacao:hover {
+    /* background-color: #9cc4e9; */
+    /* color: #063970; */
+    transition: 0,5s ease;
+    transform: scale(1.1)
+}
+
+
+.bg-yellow {
+    background-color: #fed728e3;
+    border: 2px solid #fed728cb;
+}
+
+.bg-purple {
+    background-color: #744FC4;
+    border: 2px solid #744FC4;
+}
+
+
+.annotation-card p{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 16px;
+    /* padding-bottom: 100px; */
+}
+.annotation-card {
+    margin: 20px;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: "Inria Sans", sans-serif;
+    color: #fff;
+    /* overflow-y: auto; */
+    /* border: 2px solid #1a1a1a; */
+    box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+
+    padding-bottom: 35px; /* Adicionando padding na parte inferior para acomodar os botões */
+
+}
+
+
+
+
+.btnEditarAnotacao,
+.btnApagarAnotacao {
+    border-radius: 7px;
+    border: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(206, 206, 206);
+}
+
+
+.btnApagarAnotacao:hover {
+    /* background-color: #9cc4e9; */
+    /* color: #063970; */
+    transition: 0,5s ease;
+    transform: scale(1.1);
+    background-color: white;
+}
+.btnEditarAnotacao:hover {
+    /* background-color: #9cc4e9; */
+    /* color: #063970; */
+    transition: 0,5s ease;
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.btnApagarAnotacao {
+    right: 55px;
+    z-index: 1;
+    
+}
+
+.annotation-cards {
+    padding: 10px;
+    /* border: 1px solid black; */
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    /* cursor: pointer; */
+}

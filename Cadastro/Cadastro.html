@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="shortcut icon" href="../Imagens/ICO/Brain.ico" type="image/x-icon">
+</head>
+<body class="body-cadastro">
+    <div class="main-cadastro">
+        <div class="left-cadastro">
+            <h1>NOVO POR AQUI?</h1>
+            <img src="./Documentos/brain-sides.svg" alt="Cerebro com interrogações">
+        </div>
+        <div class="right-cadastro">
+            <div class="container-cadastro">
+                <div class="return-login">
+                    Já tem uma conta? <a href="../Login/login.html"> LOGIN </a>
+                </div>
+            </div>
+            <div class="card-cadastro">
+                <h1>CADASTRAR</h1>
+                <p id="camposObrigatorios">Campos obrigatórios (*)</p>
+                <br>
+                <form id="cadastra-usuario">
+                    <div class="textfield">
+                        <label for="nome"></label>
+                        <input type="text" placeholder="DIGITE SEU NOME COMPLETO" id="nome" class="required" oninput="nameValidate()" minlength="3" maxlength="50">
+                        <span class="span">O nome deve possuir pelo menos 3 caracteres</span>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="usuario"></label>
+                        <input type="text" placeholder="DIGITE SEU USUÁRIO *" id="usuario" class="required" oninput="userValidate()" required minlength="3" maxlength="15">
+                        <span class="span">O usuário deve possuir pelo menos 3 caracteres</span>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="email"></label>
+                        <input type="text" placeholder="DIGITE SEU E-MAIL" id="email" class="required" oninput="emailValidate()" maxlength="50">
+                        <span class="span">O email deve ser válido</span>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="telefone"></label>
+                        <input type="number" placeholder="DIGITE SEU TELEFONE" id="telefone" maxlength="10">
+                    </div>
+                    <br>
+                    <div class="textfield">
+                        <label for="senha"></label>
+                        <input type="password" placeholder="DIGITE SUA SENHA *" id="senha" class="required" oninput="passwordValidate()" required minlength="4" maxlength="15">
+                        <span class="span">A senha deve possuir no mínimo 4 caracteres</span>
+                    </div>
+                    <br>
+                    <input class="btn-cadastro" type="submit" value="CADASTRAR">
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Vividly. Todos os direitos reservados.
+    </footer>
+    
+    <script src="./scriptCadastro.js"></script>
+</body>
+
+</html>
